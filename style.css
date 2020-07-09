@@ -272,6 +272,8 @@
     
     .work-examples .one-more-work a {
         position: relative;
+        overflow: hidden;
+        max-height: 170px;
     }
     
     .work-examples .one-more-work a img {
