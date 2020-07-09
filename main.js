@@ -55,6 +55,7 @@ window.onload = function() {
     })
 
 
+    //Мобильная иконка
 
     document.querySelector('.menu-icon-wrapper').onclick = function() {
         document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
@@ -65,4 +66,9 @@ window.onload = function() {
     }
 
 
+    window.addEventListener('scroll', (event) => {
+        if (pageYOffset > 400) {
+            document.querySelector('.main-container .work-examples h2 span').classList.add('opacity')
+        }
+    })
 }

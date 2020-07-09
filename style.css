@@ -31,9 +31,13 @@
         animation: 1s ease-out 0s 1 slideNavBar;
     }
     
-    .nav-bar img {
+    .nav-bar .logo img {
         margin-left: 40px;
         width: 128px;
+    }
+    
+    .nav-bar .logo a {
+        width: auto;
     }
     
     .navigation {
@@ -230,12 +234,28 @@
     }
     
     .main-container .work-examples h2 {
+        position: relative;
         padding: 40px 0;
         margin: 0;
         text-align: center;
         background-color: #505050;
         color: white;
+        height: 60px;
         width: 100%;
+    }
+    
+    .main-container .work-examples h2 span {
+        position: absolute;
+        top: 70px;
+        left: 40%;
+        opacity: 0;
+    }
+    
+    .opacity {
+        opacity: 1 !important;
+        top: 45px !important;
+        left: 40% !important;
+        transition: all 1s ease 1s;
     }
     
     .work-examples .one-more-work {
@@ -512,6 +532,9 @@
         .navigation-mobile-active {
             left: 50%;
             transition: 1s ease;
+        }
+        #work-examples h2 {
+            height: 100px;
         }
         .navigation-mobile a {
             width: 80%;
