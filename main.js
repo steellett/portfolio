@@ -67,8 +67,30 @@ window.onload = function() {
 
 
     window.addEventListener('scroll', (event) => {
-        if (pageYOffset > 400) {
-            document.querySelector('.main-container .work-examples h2 span').classList.add('opacity')
-        }
-    })
+            if (pageYOffset > 400) {
+                document.querySelector('.main-container .work-examples h2 span').classList.add('opacity')
+            }
+        })
+        //Показывает кнопку на первой странице
+    function showFPbutton() {
+        document.querySelector('.start-button').classList.add('show');
+
+
+    }
+    setTimeout(showFPbutton, 6000)
+
+
+    //пропуск первой страницы
+
+    let showNextpage = function() {
+        document.querySelector('.main-container').classList.add('show');
+        document.querySelector('.firstpage').style.display = 'none';
+    }
+
+    document.querySelector('.skip-animation').addEventListener('click', showNextpage);
+    document.querySelector('.start-button').addEventListener('click', showNextpage);
+
+
+
+
 }
