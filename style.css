@@ -6,8 +6,9 @@
             }
             
             h2 {
-                margin: 0 auto;
+                margin: 0 auto 20px;
                 padding-top: 20px;
+                text-shadow: 2px 2px 3px black;
             }
             
             .main-container {
@@ -246,15 +247,17 @@
             
             .main-container .work-examples h2 span {
                 position: absolute;
-                top: 70px;
-                left: 40%;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 opacity: 0;
             }
             
             .opacity {
                 opacity: 1 !important;
-                top: 45px !important;
-                left: 40% !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%);
                 transition: all 1s ease 1s;
             }
             
@@ -609,10 +612,12 @@
                 left: 52%;
                 font-size: 1.3em;
                 transform: translate(-50%, -50%);
-                color: #6422A7;
+                color: white;
+                text-shadow: 2px 2px 5px black;
                 font-weight: bold;
                 opacity: 0;
                 cursor: pointer;
+                border-radius: 15px;
             }
             
             .start-button.show {
@@ -626,6 +631,11 @@
                 font-size: 60px;
                 color: rgba(247, 234, 34, 1);
                 cursor: pointer;
+            }
+            
+            textarea {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 1em !important;
             }
             
             @media screen and (max-width:1650px) {
@@ -705,8 +715,16 @@
                     left: 50%;
                     transition: 1s ease;
                 }
+                #work-examples {
+                    padding-top: 0 !important;
+                }
                 #work-examples h2 {
-                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80px;
+                    margin-top: 0 !important;
+                    text-align: center;
                 }
                 .navigation-mobile a {
                     width: 80%;
