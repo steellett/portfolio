@@ -450,7 +450,7 @@ body {
     .slider-nav {
         position: absolute;
         left: 50%;
-        top: 85vw;
+        top: 91vw;
         transform: translate(-50%, -50%);
         bottom: auto;
     }
