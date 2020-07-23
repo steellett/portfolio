@@ -39,19 +39,21 @@ window.onload = function() {
         })
         //добавить и убрать подсказки на примерах
 
+    document.querySelector('.work-examples ').addEventListener('mouseover', function(event) {
 
-    document.querySelector('.work-examples').addEventListener('mouseover', function(event) {
-
-        if (!event.target.closest('.one-more-work')) return;
-        event.target.closest('.one-more-work').querySelector('.example-description').classList.add('show-display')
-
+        if (!event.target.closest('.span')) return;
+        document.querySelector('.works').classList.add('stop-animate')
+        event.target.closest('.span').querySelector('.example-description').classList.add('show-display')
 
     })
 
 
+
     document.querySelector('.work-examples').addEventListener('mouseout', function(event) {
-        if (!event.target.closest('.one-more-work').querySelector('.example-description').classList.contains('show-display') || !event.target.closest('.one-more-work')) return;
-        event.target.closest('.one-more-work').querySelector('.example-description').classList.remove('show-display')
+
+        if (!event.target.closest('.span')) return;
+        document.querySelector('.works').classList.remove('stop-animate')
+        event.target.closest('.span').querySelector('.example-description').classList.remove('show-display')
     })
 
 
