@@ -838,4 +838,8 @@
                     .works .span {
                         transform: rotateY(calc(var(--i)*60deg)) translateZ(40vw);
                     }
+                   .work-examples {
+                    
+                    min-height: 80vh;
+                    
                 }
