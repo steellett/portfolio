@@ -310,7 +310,7 @@
                 .footer form input:nth-child(1),
                 .footer form input:nth-child(2) {
                     box-sizing: border-box;
-                    width: 46%;
+                    width: 46.5%;
                     justify-content: space-between;
                     height: 40px;
                     margin: 10px 10px;
@@ -684,14 +684,14 @@
                         width: 60%;
                     }
                     .work-examples {
-                        min-height: 50vw;
+                        min-height: 40vw;
                     }
                     .works {
-                        width: 10vw;
-                        height: 7vw;
+                        width: 15vw;
+                        height: 10vw;
                     }
                     .works .span {
-                        transform: rotateY(calc(var(--i)*60deg)) translateZ(15vw);
+                        transform: rotateY(calc(var(--i)*60deg)) translateZ(20vw);
                     }
                 }
                 
@@ -838,8 +838,4 @@
                     .works .span {
                         transform: rotateY(calc(var(--i)*60deg)) translateZ(40vw);
                     }
-                   .work-examples {
-                    
-                    min-height: 80vh;
-                    
                 }
