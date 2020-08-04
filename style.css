@@ -658,7 +658,7 @@ textarea {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*60deg)) translateZ(400px);
+    transform: rotateY(calc(var(--i)*51deg)) translateZ(400px);
     -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 }
 
@@ -690,8 +690,8 @@ textarea {
         width: 15vw;
         height: 10vw;
     }
-    .works .span {
-        transform: rotateY(calc(var(--i)*60deg)) translateZ(20vw);
+    s .works .span {
+        transform: rotateY(calc(var(--i)*51deg)) translateZ(20vw);
     }
 }
 
@@ -707,7 +707,7 @@ textarea {
         height: 12vw;
     }
     .works .span {
-        transform: rotateY(calc(var(--i)*60deg)) translateZ(25vw);
+        transform: rotateY(calc(var(--i)*51deg)) translateZ(25vw);
     }
 }
 
@@ -836,6 +836,6 @@ textarea {
         height: 30vw;
     }
     .works .span {
-        transform: rotateY(calc(var(--i)*51deg)) translateZ(40vw);
+        transform: rotateY(calc(var(--i)*51deg)) translateZ(50vw);
     }
 }
